@@ -8,12 +8,19 @@
 // }
 // setTimeoutPromisified(3000).then(callback);
 
-function print(){
-    console.log("helloo");
+
+function random(resolve){   //resolve is also a function
+    setTimeout(resolve,3000);
 }
 
-function afterDone(){
-    console.log("print is alr done");
+let p=new Promise(random); // supposed to return u something eventually.
+
+
+//using the eventual value returned by the promise.
+function callback(){
+    console.log("promise suceeded");
 }
 
-print().then(afterDone);
+p.then(callback);
+
+
