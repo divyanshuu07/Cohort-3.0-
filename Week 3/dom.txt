@@ -1,0 +1,3 @@
+DOM or Document Object Model is a programming interface for web documents.
+represents the structure of a web page as a tree of objects.\
+allowing scripts to manipulate the content and structure dynamically.
